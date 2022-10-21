@@ -1,0 +1,61 @@
+ Working area=>>> Where you make the changes
+Staging area=>>> Where your changes are pushed when you run "git add"
+
+How to add/remove staging area:
+git add =>>> add to staging area
+git restore <filename> =>>> Remve from staging area
+
+Stash:
+It takes a snapshot of your repository and keeps it aside/hidden and gives your a clean directory structre
+git stash
+
+When you want again your changes:
+git stash pop
+
+if you want to clear the stash:
+
+git stash clear
+
+#######Branching########
+to create a branch 
+git branch <branch-name>
+
+to checkout on any branch
+git checkout <branch-name>
+
+to list the branches:
+git branch -l
+
+To link the remote repository:
+
+git remote add origin <url>
+
+remote=> the url you are working with
+add=> Adds the url
+origin=> alias to url
+url=> the link to your repository
+
+To check the urls linked with the repo
+git remote -v
+
+To push the commited changes:
+git push origin <branch>
+
+
+How to raise a PR:
+pushing a change => git push origin <branch>
+
+There is always 1-1 relationship between a branch and PR
+
+
+If you want to ignore the commits:
+git reset <commit-id>
+
+
+When you want to update your local repo
+git pull
+
+##################IMP##################
+We never directly work on master branch
+always create a local branch and checkout to local branch and start making the changes
+
